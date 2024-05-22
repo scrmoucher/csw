@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+</head>
+<body>
+    <div>
+        <h1>Formulário de contato</h1>
+    </div>
+    <section class="formulário">
+<form action="meilto:seu.email@seuemail.com" method="post">
+    <label for="nome-usuário">
+        Nome do Usuário:
+    </label>
+    <input type="text"><br>
+    <label for="Email">email</label>  
+    <input type="email"><br>
+    <label for="Telefone">Telefone</label>  
+    <input type="tel"><br>
+    <label for="Comentarios">Comentarios</label> 
+    <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+<label for="Data-Nascimento">Data de nascimento</label>
+<input type="date" name="date" id="time">
+<label for="Visita">Visita</label>
+<input type="Time" name="Time" id="time"><br>
+<label for="Deseja-conato">Deseja receber contato</label>
+<input type="radio" name="opção" id="opçãosim" value="Sim"> Sim
+<input type="radio" name="opção" id="opçãonão" value="Não"> Não <br>
+<span>Assunto a receber</span>
+<input type="checkbox" name="checkbox" id="checkbox1" value="Auto"> Automóvel
+<input type="checkbox" name="checkbox" id="checkbox2" value="Negocios"> Negocios
+<input type="checkbox" name="checkbox" id="checkbox3" value="Esporte"> Esporte
+<br>
+</form>
+<div class="botão"> 
+    <input type="submit" id="enviar" value="enviar">
+    <input type="reset" id="limpar" value="limpar">
+</div>
+    
+</body>
+</html>
