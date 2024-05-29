@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19</title>
+
+    <style>
+        div{
+            background-color: rgb(146, 148, 148);
+            height: 125px;
+            width: 280px;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input{
+            border-radius: 5px;
+        }
+
+        label{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <br>
+    <label for=""></label>
+    <label for="Login">
+        Login:
+    </label>
+    <input id="login" type="text" size="25"><br>
+    <label for="senha">
+        Senha:
+    </label>
+    <input id="senha" type="text" size="25"><br> <br>
+    <section class="container">
+        <button onclick="validaLogin()">Login</button>
+        <button onclick="window.close()" id="fechar">Fechar janela</button>
+</section>
+
+</div>
+
+<script>
+    function validaLogin(){
+        var login="";
+        login = document.getElementById("login").value;
+        if (login == "adm@uvv.br"){
+            window.alert("Seja bem-vindo administrador")
+        }
+        else{
+            window.alert("Não é o administrador")
+        }
+
+    }
+</script>
+
+<script>
+    function validaLogin(){
+        var senha="";
+        senha = document.getElementById("senha").value;
+        if (senha == "adm#123"){
+            window.alert("Bem-vindo ao dream")
+        }
+        else{
+            window.alert("Não bem-vindo")
+        }
+
+    }
+</script>
+
+<script>
+    document.getElementById("fechar").onclick = function()
+{
+    window.close();
+}
+</script>
+
+
+</body>
+</html>
